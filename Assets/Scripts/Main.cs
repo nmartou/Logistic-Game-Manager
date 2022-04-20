@@ -12,7 +12,10 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Money.text = GameManager.Instance.MyTotalMoney().ToString();
+        Money.text = "$" + GameManager.Instance.MyTotalMoney().ToString();
+        MyVehiclesCanva.SetActive(false);
+        MainCanva.SetActive(true);
+        ContractsCanva.SetActive(false);
     }
 
     // Update is called once per frame

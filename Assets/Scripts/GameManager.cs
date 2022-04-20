@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         _totalMoney += money;
     }
-    public void SubstractTotalMoney(int money)
+    public void WithdrawTotalMoney(int money)
     {
         _totalMoney -= money;
     }
