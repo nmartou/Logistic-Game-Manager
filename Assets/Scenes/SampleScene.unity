@@ -4025,6 +4025,14 @@ MonoBehaviour:
   unlockedVue: {fileID: 1042177939}
   specificVehicleVue: {fileID: 552453774}
   isLocked: 1
+  wheelsText: {fileID: 192930832}
+  engineText: {fileID: 568662068}
+  gearboxText: {fileID: 1028645733}
+  suspensionText: {fileID: 1958640531}
+  controleText: {fileID: 911016996}
+  fuelText: {fileID: 229509419}
+  levelText: {fileID: 748777562}
+  car: {fileID: 175997729}
 --- !u!1 &1421188721
 GameObject:
   m_ObjectHideFlags: 0

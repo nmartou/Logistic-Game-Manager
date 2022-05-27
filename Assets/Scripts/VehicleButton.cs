@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VehicleButton : MonoBehaviour
 {
@@ -8,6 +9,17 @@ public class VehicleButton : MonoBehaviour
     public GameObject unlockedVue;
     public GameObject specificVehicleVue;
     public bool isLocked = true;
+
+    public Text wheelsText;
+    public Text engineText;
+    public Text gearboxText;
+    public Text suspensionText;
+    public Text controleText;
+    public Text fuelText;
+
+    public Text levelText;
+
+    public GameObject car;
 
     private void Start()
     {
