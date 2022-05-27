@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
-    private static int _totalMoney = 15000;
+    private static int _totalMoney = 14000;
     private static int _totalVehicleCanPurchase = 1;
     private static int _totalVehicle = 1;
 
