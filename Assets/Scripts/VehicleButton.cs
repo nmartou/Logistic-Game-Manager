@@ -6,11 +6,13 @@ using VehicleClass;
 
 public class VehicleButton : MonoBehaviour
 {
+    //Classic variables
     public GameObject lockedVue;
     public GameObject unlockedVue;
     public GameObject specificVehicleVue;
     public bool isLocked = true;
 
+    //Class and editing text vehicle data
     public Text wheelsText;
     public Text engineText;
     public Text gearboxText;
@@ -23,8 +25,8 @@ public class VehicleButton : MonoBehaviour
     public GameObject car;
     Vehicle vehicle;
 
+    //Animation and edit Error text
     public Text errorText;
-
     public GameObject errorObject;
     private Animator animator;
 
@@ -57,11 +59,12 @@ public class VehicleButton : MonoBehaviour
         }
         else if (GameManager.Instance.MyTotalMoney() < 15000)
         {
+            // Check if the actual animation is Error or not
             if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Error"))
             {
                 errorText.text = "You do not have enough money !";
                 Debug.Log("Not enough money !");
-                animator.SetTrigger("switch");
+                animator.SetTrigger("switch"); //Could play once the animation
             }
         }
         else
